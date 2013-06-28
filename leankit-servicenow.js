@@ -13,4 +13,4 @@ $("div.text")
           /((RITM|REQ|INC)[0-9]+)/,
           '<a target="_" style="color:blue" href="https://kstate.service-now.com/nav_to.do?uri=textsearch.do?sysparm_search=$1">$1</a>');
       $(this).html(label) 
-  })
+  });
