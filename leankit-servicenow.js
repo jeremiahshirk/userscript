@@ -11,7 +11,7 @@ setInterval(function(){
   $("div.text").not(".wserewrite")
     .each(function () {
       label = $(this).text().replace(
-          /((RITM|REQ|INC)[0-9]+)/,
+          /((RITM|REQ|INC|TASK)[0-9]+)/,
           '<a target="_" style="color:blue" href="https://kstate.service-now.com/nav_to.do?uri=textsearch.do?sysparm_search=$1">$1</a>');
       $(this).html(label);
       $(this).addClass("wserewrite");
