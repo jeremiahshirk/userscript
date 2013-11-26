@@ -10,7 +10,7 @@ Tested with TamperMonkey in Chrome.  Should work with GreaseMonkey as well.
 
 * Enable "Allow access to file URLs" in Chrome
  + chrome://extensions
-* <a href="https://raw.github.com/ksuquix/userscript/master/leankit-servicenow.tamper.js">Click to Install</a>
+* <a href="https://raw.github.com/kstateome/userscript/master/leankit-servicenow.tamper.js">Click to Install</a>
  + click on Raw
 
 ## Sync to all Chrome
