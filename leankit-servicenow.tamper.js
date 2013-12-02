@@ -1,16 +1,14 @@
 // ==UserScript==
 // @name           ServiceNow Leankit Link Replacer
-// @namespace      https://github.com/kstateome/userscript
-// @version        0.0.5
-// @description    replace servicenow and other identifiers in LeanKit with a link
+// @namespace      https://github.com/jeremiahshirk/userscript
+// @version        0.0.4
+// @description    replace servicenow identifiers in LeanKit with a link
 // @include        https://ksu.leankit.com/*
 // @run-at         document-end
 // ==/UserScript==
 
-// Takes a given div class and converts Service Now and 
-//  bugzilla ticket references into html links
-function link(divclass) {
-  $(divclass).not(".wserewrite")
+setInterval(function(){
+  $("div.text", "div.kb-comment-info-section").not(".wserewrite")
     .each(function () {
       label = $(this).text().replace(
           /((RITM|REQ|INC|TASK)[0-9]+)/,
@@ -19,9 +17,4 @@ function link(divclass) {
       $(this).html(label);
       $(this).addClass("wserewrite");
     });
-}
-
-setInterval(function(){
-  link("div.text");
-  link("div.kb-comment-info-section");
 },1000);
