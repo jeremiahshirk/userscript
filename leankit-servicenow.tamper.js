@@ -8,7 +8,7 @@
 // ==/UserScript==
 
 setInterval(function(){
-  $("div.text").not(".wserewrite")
+  $("div.text", "div.kb-comment-info-section").not(".wserewrite")
     .each(function () {
       label = $(this).text().replace(
           /((RITM|REQ|INC|TASK)[0-9]+)/,
