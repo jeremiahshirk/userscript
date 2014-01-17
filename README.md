@@ -17,7 +17,9 @@ Tested with TamperMonkey in Chrome.  Should work with GreaseMonkey as well.
 
 * Make sure you are logged into google on each instance
 * Chrome sync
- + Tampermonkey->Settings->TESLA->chrome sync->save
+ + Tampermonkey->Settings
+ + General->config mode at least Beginner
+ + TESLA->chrome sync->save
  + settings->(bottom)->restart tampermonkey
  + click on the notification to enable sync
    
