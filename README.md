@@ -10,14 +10,16 @@ Tested with TamperMonkey in Chrome.  Should work with GreaseMonkey as well.
 
 * Enable "Allow access to file URLs" in Chrome
  + chrome://extensions
-* <a href="https://raw.github.com/ksuquix/userscript/master/leankit-servicenow.tamper.js">Click to Install</a>
+* <a href="https://raw.github.com/kstateome/userscript/master/leankit-servicenow.tamper.js">Click to Install</a>
  + click on Raw
 
 ## Sync to all Chrome
 
 * Make sure you are logged into google on each instance
 * Chrome sync
- + Tampermonkey->Settings->TESLA->chrome sync->save
+ + Tampermonkey->Settings
+ + General->config mode at least Beginner
+ + TESLA->chrome sync->save
  + settings->(bottom)->restart tampermonkey
  + click on the notification to enable sync
    
