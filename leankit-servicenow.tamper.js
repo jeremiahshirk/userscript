@@ -11,7 +11,7 @@ setInterval(function(){
   $("div.text, div.kb-comment-info-section").not(".wserewrite")
     .each(function () {
       label = $(this).text().replace(
-          /((PRB|RITM|REQ|INC|TASK)[0-9]+)/g,
+          /((PRB|RITM|REQ|INC|TASK|CHG|ENHC)[0-9]+)/g,
           '<a target="_" style="color:blue" href="https://kstate.service-now.com/nav_to.do?uri=textsearch.do?sysparm_search=$1" onclick="event.stopPropagation();">$1</a>');
       label = label.replace(/(Bug )([0-9]+)/i,'<a target="_" style="color:blue" href="https://tools.ome.ksu.edu/bugzilla/show_bug.cgi?id=$2">$1$2</a>');
       $(this).html(label);
