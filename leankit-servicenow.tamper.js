@@ -4,6 +4,7 @@
 // @version        0.0.8
 // @description    replace servicenow identifiers in LeanKit with a link
 // @include        https://ksu.leankit.com/*
+// @require        http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
 // @run-at         document-end
 // ==/UserScript==
 
