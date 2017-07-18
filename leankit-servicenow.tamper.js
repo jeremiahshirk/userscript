@@ -10,7 +10,7 @@
 // ==/UserScript==
 
 setInterval(function(){
-  $("div.text, div.kb-comment-info-section").not(".wserewrite")
+  $("div.text, div.kb-comment-info-section, div.card-text").not(".wserewrite")
     .each(function () {
       label = $(this).text().replace(
           /((PRB|RITM|REQ|INC|TASK|CHG|ENHC)[0-9]+)/g,
