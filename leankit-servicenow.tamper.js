@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           ServiceNow Leankit Link Replacer
 // @namespace      https://github.com/kstateome/userscript
-// @version        0.0.10
+// @version        0.0.11
 // @description    replace servicenow identifiers in LeanKit with a link
 // @include        https://ksu.leankit.com/*
 // @require        http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
@@ -10,7 +10,7 @@
 // ==/UserScript==
 
 setInterval(function(){
-  $("div.text, div.kb-comment-info-section").not(".wserewrite")
+  $("div.text, div.kb-comment-info-section, div.card-text").not(".wserewrite")
     .each(function () {
       label = $(this).text().replace(
           /((PRB|RITM|REQ|INC|TASK|CHG|ENHC)[0-9]+)/g,
