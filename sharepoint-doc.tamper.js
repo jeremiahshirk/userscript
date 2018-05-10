@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           EST Sharepoint documentation updates
 // @namespace      https://github.com/kstateome/userscript
-// @version        0.0.5
+// @version        0.0.6
 // @description    automate some sharepoint things
 // @include        https://ksuemailprod.sharepoint.com/sites/est/*
 // @require        https://code.jquery.com/jquery-latest.min.js
@@ -9,20 +9,17 @@
 // @run-at         document-end
 // ==/UserScript==
 
-
-$().ready(
-    function() {
-	setTimeout(
-	    function() {
-		if(window.location.pathname.indexOf('Pages/Forms/AllItems.aspx')>0) {
-		    if(window.location.search.indexOf('id=')>0) {
-			over=$("a:contains('Overview.aspx')").attr('href');
-			if(over) {
-			    window.location = over;
-			}
-		    }
-		}
+setInterval(function(){
+    if(window.location.pathname.indexOf('Pages/Forms/AllItems.aspx')>0) {
+	if(window.location.search.indexOf('id=')>0) {
+	    over=$("a:contains('Overview.aspx')").attr('href');
+	    if(over) {
+		window.location = over;
 	    }
-	    ,500);
+	}
     }
-);
+},1000);
+
+// polling
+// on change: div.ms-List-page
+
