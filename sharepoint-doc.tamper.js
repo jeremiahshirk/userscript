@@ -10,11 +10,11 @@
 // ==/UserScript==
 
 function loadoverview(){
-    console.log("overview check");
+//    console.log("overview check");
 	if(window.location.search.indexOf('id=')>0) {
 	    over=$("a:contains('Overview.aspx')").attr('href');
 	    if(over) {
-		console.log("overview found");
+//		console.log("overview found");
 		window.location = over;
 		clearInterval(overviewchecker);
 	    }
