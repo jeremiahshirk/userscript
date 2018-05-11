@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           EST Sharepoint documentation updates
 // @namespace      https://github.com/kstateome/userscript
-// @version        0.0.6
+// @version        0.0.7
 // @description    automate some sharepoint things
 // @include        https://ksuemailprod.sharepoint.com/sites/est/*
 // @require        https://code.jquery.com/jquery-latest.min.js
@@ -18,7 +18,7 @@ setInterval(function(){
 	    }
 	}
     }
-},1000);
+},500);
 
 // polling
 // on change: div.ms-List-page
